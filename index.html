@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portaria Condomínio - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>🔑 Portaria do Condomínio</h2>
+        <form id="loginForm">
+            <h3 style="color:var(--secondary-color); font-weight: 400; font-size: 1.2rem;">Acesso de Porteiro</h3>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required placeholder="Seu e-mail">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required placeholder="Sua senha">
+
+            <button type="submit">Entrar</button>
+            <p id="message" class="error-message"></p>
+        </form>
+
+        <!-- Link para a nova tela de cadastro (Ação 4) -->
+        <p style="margin-top: 15px;">
+            Novo porteiro? <a href="cadastro_porteiro.html" style="color: var(--primary-color);">Cadastre-se aqui</a>
+        </p>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
